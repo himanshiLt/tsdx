@@ -1,14 +1,16 @@
 framework: jest
 preRun:
-     command:
-        - yarn install
+  command:
+    - yarn install
 postMerge:
   pattern: 
-    - "./test/**/*.test.ts"
+    - "./test/**/*.test.ts?(x)"
 preMerge:
   pattern:
-    - "./test/**/*.test.ts"
+    - "./test/**/*.test.ts?(x)"
 postRun:
-     command:
-        - yarn --version
+  command:
+    - yarn --version
+
+configFile: jest.config.tas.js
 version: 1.0
