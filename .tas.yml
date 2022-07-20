@@ -1,3 +1,4 @@
+---
 framework: jest
 preRun:
   command:
@@ -11,6 +12,5 @@ preMerge:
 postRun:
   command:
     - yarn --version
-
 configFile: jest.config.tas.js
 version: 1.0
